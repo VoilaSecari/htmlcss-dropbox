@@ -16,6 +16,7 @@ img {
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul {
@@ -24,15 +25,94 @@ ul {
 
 /* Utils */
 
+.btn {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+}
+
+.btn.btn-blue {
+  background-color: #008cff;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+/* 1REM = 16 PX */
+
 .debug,
 .debug * {
   min-height: 100px;
   padding: 5px;
   background-color: #ff000022;
+  border: 1px dashed red;
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 1180px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 0.5rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+  row-gap: 1rem;
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+}
+
+[class*="col"] {
+  padding: 0 0.5rem;
+}
+
+.col {
+  width: 100%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.col-33 {
+  width: calc(100% / 3);
+}
+
+/* header */
+
+.page-header {
+  padding: 1rem 0.5rem;
+  height: 55px;
+  font-size: 12px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  /* debug */
+  background-color: pink;
+}
+
+.page-header li {
+  display: inline-block;
+  margin-right: 13px;
+}
+
+.container-nav {
+  align-items: center;
+}
+
+.logo {
+  height: 16px;
 }
