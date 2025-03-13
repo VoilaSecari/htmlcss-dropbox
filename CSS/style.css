@@ -23,17 +23,22 @@ ul {
   list-style-type: none;
 }
 
+p {
+  font-size: 12px;
+}
+
 /* Utils */
 
 .btn {
-  padding: 0.3rem 0.6rem;
+  padding: 0.5rem 0.8rem;
   border: 1px solid transparent;
 }
 
 .btn.btn-blue {
-  background-color: #008cff;
+  background-color: #0075d5;
 }
 
+/* Colori per i link */
 .text-white {
   color: white;
 }
@@ -52,8 +57,14 @@ ul {
   border: 1px dashed red;
 }
 
+.container-m {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
 .container {
-  max-width: 1180px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -87,6 +98,14 @@ ul {
   width: calc(100% / 3);
 }
 
+.col-30 {
+  width: 30%;
+}
+
+.col-70 {
+  width: 70%;
+}
+
 /* header */
 
 .page-header {
@@ -99,9 +118,10 @@ ul {
   align-items: center;
   position: sticky;
   top: 0;
+  background-color: white;
 
   /* debug */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .page-header li {
@@ -115,4 +135,42 @@ ul {
 
 .logo {
   height: 16px;
+}
+
+/* top */
+
+h1 {
+  font-size: 80px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-weight: 900;
+}
+
+.top {
+  background-color: #afd0ed;
+  height: 667px;
+}
+
+.container-m .col-30 > p {
+  padding-bottom: 30px;
+  line-height: 22px;
+  font-size: 16px;
+}
+
+.container-m .col-30 > button {
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+.fa-arrow-down {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+/* bottom */
+
+.bottom {
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid grey;
 }
