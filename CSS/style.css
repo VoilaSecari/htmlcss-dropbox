@@ -64,7 +64,7 @@ p {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -104,6 +104,11 @@ p {
 
 .col-70 {
   width: 70%;
+}
+
+[class*="fa"] {
+  padding-right: 3px;
+  font-size: 12px;
 }
 
 /* header */
@@ -170,7 +175,96 @@ h1 {
 /* bottom */
 
 .bottom {
-  height: 100px;
+  height: 140px;
   background-color: white;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+/* MAIN */
+
+/*  sezione 3 colonne */
+
+h2 {
+  font-size: 39px;
+  margin-top: 77px;
+  margin-bottom: 70px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+input[type="radio"]:checked {
+  accent-color: #0075d5;
+}
+
+form label {
+  margin-right: 30px;
+}
+
+form {
+  margin-bottom: 50px;
+}
+
+.header-fatturazione {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(239, 239, 239);
+}
+
+.content-fatturazione {
+  border: 1px solid rgb(239, 239, 239);
+  padding: 0 1.2rem;
+}
+
+.content-fatturazione > h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content-fatturazione > .tempo-pagamento {
+  margin-top: 10px;
+  color: rgb(147, 147, 147);
+  margin-bottom: 40px;
+}
+
+.content-fatturazione > ul > li {
+  margin-bottom: 20px;
+  font-size: 13px;
+  font-weight: 100;
+}
+
+.content-fatturazione > button {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.content-fatturazione #link-acquista {
+  text-decoration: underline;
+}
+
+.content-fatturazione #testo-acquista {
+  margin-bottom: 20px;
+}
+
+hr {
+  color: transparent;
+  height: 0.5px;
+  background-color: rgb(239, 239, 239);
+
+  margin-bottom: 30px;
+}
+
+.titolo-punti-salienti {
+  margin-bottom: 20px;
+}
+
+.altezza {
+  height: 678px;
 }
