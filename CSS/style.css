@@ -25,6 +25,7 @@ ul {
 
 p {
   font-size: 12px;
+  line-height: 17px;
 }
 
 /* Utils */
@@ -36,6 +37,12 @@ p {
 
 .btn.btn-blue {
   background-color: #0075d5;
+}
+
+.btn.btn-white {
+  background-color: white;
+  border: 1px solid currentColor;
+  color: black;
 }
 
 /* Colori per i link */
@@ -104,6 +111,21 @@ p {
 
 .col-70 {
   width: 70%;
+}
+
+.col-60 {
+  width: 60%;
+
+  /* debug */
+  /* background-color: pink;
+  height: 120px; */
+}
+
+.col-40 {
+  width: 40%;
+  /* debug */
+  /* background-color: aqua;
+  height: 120px; */
 }
 
 [class*="fa"] {
@@ -191,7 +213,7 @@ h2 {
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 h5 {
@@ -249,7 +271,7 @@ form {
   text-decoration: underline;
 }
 
-.content-fatturazione #testo-acquista {
+.content-fatturazione .testo-acquista {
   margin-bottom: 20px;
 }
 
@@ -296,4 +318,45 @@ hr {
 
 .w-30 {
   width: 30%;
+}
+
+/* DIVIDER */
+
+.divider {
+  height: 180px;
+  background-color: transparent;
+}
+
+.container-no-space {
+  max-width: 980px;
+  margin: 0 auto;
+  margin-bottom: 130px;
+}
+
+.container-no-space .col-60 {
+  padding: 0;
+}
+
+.container-no-space .flex .col-40 {
+  padding-top: 6rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.container-no-space .flex .col-40 h3 {
+  padding-bottom: 2rem;
+}
+
+.container-no-space .flex .col-40 p {
+  padding-bottom: 2rem;
+}
+
+/* SEZIONE ARTICOLI */
+
+.container-img + h3 {
+  padding-bottom: 1.6rem;
+}
+
+.container-img + h3 + p {
+  padding-bottom: 2rem;
 }
